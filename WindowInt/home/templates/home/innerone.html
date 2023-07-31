@@ -1,0 +1,10 @@
+{% extends 'home/homepage.html' %}
+
+{% block title %}Inner One{% endblock title %}
+
+{% block form %} <form method="POST" action='/innerone/' class="d-flex new-folder" role="search"> {% endblock form %}
+
+{% block dest %} 
+  <a href="/innertwo" class='box-text'> {{folder}} </a>
+  <a href="/deleteone/{{folder.id}}" class="delete"></a> 
+{% endblock dest %}
